@@ -1,0 +1,365 @@
+/*Colors*/
+    $Blue : #00BCD4;
+    $Black: black;
+    $White: white;
+    $LightBlue: #c2f0f7;
+
+    html{
+        height: 100%;
+        box-sizing: border-box;
+    }
+    body {
+        background-image:url(../images/Background.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: $White;
+        background-position: center;
+        height: auto;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+/*Navigation*/
+
+    header {
+        background-color: $White;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px 0px 15px;
+        color: $Black;
+        border-bottom: 1px solid $Blue;
+        #Menu{
+            align-items: flex-start;
+            span{
+                text-decoration: underline;
+                text-decoration-color: $Blue;
+            }
+        }
+        #Navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-self: flex-end;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                padding: 10px;
+                align-items: flex-end;
+                color: $Black;
+                font-size: 20px;
+                
+            }
+            a:hover{
+                color: $Blue;
+                text-decoration: underline;
+            }
+        }
+    }
+
+/*Button Top*/
+    #MyBtn{
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 18px;
+        background-color: $Blue;
+        opacity: 0.5;
+        i{
+            color: $White;
+        }
+    }
+
+    #MyBtn:hover{
+        opacity: 1;
+    }
+
+/*Presentation*/
+    #Presentation {
+        margin-top: 45px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .card{
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            background-color: $White;
+            box-shadow: 5px 10px 18px 10px $Black;
+            h2{
+                color: $Blue;
+            }
+            span{
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .profession{
+                font-size: 18px;
+            }
+            .button{
+                background-color: #00BCD4;
+                padding: 8px;
+                a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $White;
+                }
+                a:hover{
+                    text-decoration: underline;
+                    color: $Black;
+                }
+            }
+            li{
+                text-align: start;
+            }
+        }
+
+        .collapsible{
+            color: $Black;
+            background-color: $White;
+            border: none;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            font-size: 18px;
+            outline: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .active, .collapsible:hover{
+            color: $Blue;
+            text-decoration: underline;
+        }
+        .content{
+            padding: 0 18px;
+            display: none;
+        }
+    }
+
+/*Futur Projects*/
+
+    #FuturProjects{
+        background-color: $White;
+        margin-top: 45px;
+        margin-bottom: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 15px 45px 15px;
+        h2{
+            align-items: center;
+            text-align: center;
+        }
+        h3{
+            text-decoration: underline $Blue;
+        }
+        .futurPresentation{
+            display: flex;
+            justify-content: center;
+            .ProjetGîte, .ProjetBrasserie{
+                margin: 0px 25px;
+                max-width: 500px;
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+    }
+
+/*Projects*/
+
+    /*Animation card*/
+    :root {
+        --card-height: 40vw;
+        --card-margin: 4vw;
+        --card-top-offset: 1em;
+        --numcards: 6;
+        --outline-width: 0px;
+    }
+    
+    #Cards {
+        padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
+        margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+        
+        #Card_1 {
+            --index: 1;
+        }
+        #Card_2 {
+            --index: 2;
+        }
+        #Card_3 {
+            --index: 3;
+        }
+        #Card_4 {
+            --index: 4;
+        }
+        #Card_5 {
+            --index: 5;
+        }
+        #Card_6 {
+            --index: 6;
+        }
+    }
+
+    .card{
+        position: sticky;
+        top: 0;
+        padding-top: calc(var(--index) * var(--card-top-offset));
+    }
+
+    @supports (animation-timeline: works) {
+    
+        .card {
+            --index0: calc(var(--index) - 1); /* 0-based index */
+            --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
+            --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+        }
+        
+        .card__content {
+            transform-origin: 50% 0%;
+            will-change: transform;
+    
+            --duration: calc(var(--reverse-index0) * 1s);
+            --delay: calc(var(--index0) * 1s);
+    
+            animation: var(--duration) linear scale var(--delay) forwards;
+     
+        }
+    
+        @keyframes scale {
+            to {
+                transform:
+                    scale(calc(
+                        1.1
+                        -
+                        calc(0.1 * var(--reverse-index))
+                    ));
+            }
+        }
+    }
+
+    /*Style Card*/
+
+    #Creation{
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;  
+    }
+
+    #Cards {
+        list-style: none;
+       	display: grid;
+	    grid-template-columns: 1fr;
+
+	    gap: var(--card-margin);
+
+        .card_content{
+            box-shadow: 0 0.2em 1em $Black, 0 1em 2em $Black;
+            background: $LightBlue;
+            color: $Black;
+            border-radius: 1em;
+            overflow: hidden;
+            display: grid;
+            grid-template-areas: "text img";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            align-items: stretch;
+            ul{
+                list-style-type: none;
+                padding-bottom: 10px;
+            }
+            div{
+                grid-area: text;
+                width: 80%;
+                place-self: center;
+                text-align: left;
+
+                display: grid;
+                gap: 1em;
+                place-items: start;
+            }
+            figure {
+                grid-area: img;
+                overflow: hidden;
+                margin: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 2.5em;
+            }
+            
+            a{
+                padding-bottom: 25px;
+                text-decoration: none;
+                font-weight: bold;
+                color: $Black;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            
+        }
+    
+    }
+
+
+/*Contact*/
+
+    footer{
+        background-color: $White;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px 25px 15px;
+        color: $Black;
+        bottom: 0;
+        align-items: center;
+        text-align: center;
+        h3{
+            text-decoration: underline;
+        }
+        .liens{
+            i.fab{
+                color: $Blue;
+                font-size: 30px;
+                padding: 0px 5px;
+            }
+            a:hover{
+                i.fab{
+                    color: $Black;
+                }
+            }
+        }
+        
+    }
+
+/*Media Queries*/
+
+    @media (max-width: 750px) {
+
+        .futurPresentation{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Creation{
+            width: 98%;
+            margin: -15px;
+            .card_content{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }

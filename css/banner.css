@@ -1,0 +1,106 @@
+/*Colors*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 5px;
+  background-image: url(../images/Background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+body img {
+  opacity: 0.3;
+}
+
+#AnimationEnter {
+  width: 1000px;
+  margin-top: 45vh;
+  transform: translateY(-80%);
+}
+#AnimationEnter a {
+  text-decoration: none;
+}
+
+#Banner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#Banner .name {
+  background-color: #00BCD4;
+  color: black;
+  padding: 15px 25px 60px 25px;
+  font-style: bold;
+  text-align: end;
+  width: 525px;
+  margin-right: 5px;
+  top: 0px;
+  position: relative;
+  left: 15px;
+}
+#Banner .name h1 {
+  position: relative;
+}
+#Banner .job {
+  background-color: black;
+  color: #00BCD4;
+  padding: 60px 25px 15px 25px;
+  font-style: bold;
+  text-align: left;
+  width: 525px;
+  top: 125px;
+  position: relative;
+  right: 15px;
+}
+#Banner .job h2, #Banner .job h3 {
+  position: relative;
+}
+
+#Banner.inverse {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1000px) {
+  #AnimationEnter {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #AnimationEnter {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #AnimationEnter {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  #AnimationEnter {
+    width: 300px;
+  }
+  #AnimationEnter #Banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #AnimationEnter #Banner .name {
+    margin-right: 5px;
+    left: 0px;
+    width: 300px;
+  }
+  #AnimationEnter #Banner .job {
+    top: 5px;
+    right: 0px;
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=banner.css.map */

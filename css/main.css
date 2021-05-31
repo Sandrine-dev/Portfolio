@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/*Colors*/
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/Background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+  background-position: center;
+  height: auto;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Navigation*/
+header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px 0px 15px;
+  color: black;
+  border-bottom: 1px solid #00BCD4;
+}
+header #Menu {
+  align-items: flex-start;
+}
+header #Menu span {
+  text-decoration: underline;
+  text-decoration-color: #00BCD4;
+}
+header #Navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+header #Navigation a {
+  text-decoration: none;
+  padding: 10px;
+  align-items: flex-end;
+  color: black;
+  font-size: 20px;
+}
+header #Navigation a:hover {
+  color: #00BCD4;
+  text-decoration: underline;
+}
+
+/*Button Top*/
+#MyBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #00BCD4;
+  opacity: 0.5;
+}
+#MyBtn i {
+  color: white;
+}
+
+#MyBtn:hover {
+  opacity: 1;
+}
+
+/*Presentation*/
+#Presentation {
+  margin-top: 45px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Presentation .card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 5px 10px 18px 10px black;
+}
+#Presentation .card h2 {
+  color: #00BCD4;
+}
+#Presentation .card span {
+  font-weight: bold;
+  font-size: 18px;
+}
+#Presentation .card .profession {
+  font-size: 18px;
+}
+#Presentation .card .button {
+  background-color: #00BCD4;
+  padding: 8px;
+}
+#Presentation .card .button a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+#Presentation .card .button a:hover {
+  text-decoration: underline;
+  color: black;
+}
+#Presentation .card li {
+  text-align: start;
+}
+#Presentation .collapsible {
+  color: black;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  font-family: "Times New Roman", Times, serif;
+}
+#Presentation .active, #Presentation .collapsible:hover {
+  color: #00BCD4;
+  text-decoration: underline;
+}
+#Presentation .content {
+  padding: 0 18px;
+  display: none;
+}
+
+/*Futur Projects*/
+#FuturProjects {
+  background-color: white;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 15px 45px 15px;
+}
+#FuturProjects h2 {
+  align-items: center;
+  text-align: center;
+}
+#FuturProjects h3 {
+  text-decoration: underline #00BCD4;
+}
+#FuturProjects .futurPresentation {
+  display: flex;
+  justify-content: center;
+}
+#FuturProjects .futurPresentation .ProjetGîte, #FuturProjects .futurPresentation .ProjetBrasserie {
+  margin: 0px 25px;
+  max-width: 500px;
+}
+#FuturProjects .futurPresentation .ProjetGîte p, #FuturProjects .futurPresentation .ProjetBrasserie p {
+  text-align: justify;
+}
+
+/*Projects*/
+/*Animation card*/
+:root {
+  --card-height: 40vw;
+  --card-margin: 4vw;
+  --card-top-offset: 1em;
+  --numcards: 6;
+  --outline-width: 0px;
+}
+
+#Cards {
+  padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+  /* Make place at bottom, as items will slide to that position*/
+  margin-bottom: var(--card-margin);
+  /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+}
+#Cards #Card_1 {
+  --index: 1;
+}
+#Cards #Card_2 {
+  --index: 2;
+}
+#Cards #Card_3 {
+  --index: 3;
+}
+#Cards #Card_4 {
+  --index: 4;
+}
+#Cards #Card_5 {
+  --index: 5;
+}
+#Cards #Card_6 {
+  --index: 6;
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  padding-top: calc(var(--index) * var(--card-top-offset));
+}
+
+@supports (animation-timeline: works) {
+  .card {
+    --index0: calc(var(--index) - 1);
+    /* 0-based index */
+    --reverse-index: calc(var(--numcards) - var(--index0));
+    /* reverse index */
+    --reverse-index0: calc(var(--reverse-index) - 1);
+    /* 0-based reverse index */
+  }
+
+  .card__content {
+    transform-origin: 50% 0%;
+    will-change: transform;
+    --duration: calc(var(--reverse-index0) * 1s);
+    --delay: calc(var(--index0) * 1s);
+    animation: var(--duration) linear scale var(--delay) forwards;
+  }
+
+  @keyframes scale {
+    to {
+      transform: scale(calc( 1.1 - calc(0.1 * var(--reverse-index)) ));
+    }
+  }
+}
+/*Style Card*/
+#Creation {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#Cards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--card-margin);
+}
+#Cards .card_content {
+  box-shadow: 0 0.2em 1em black, 0 1em 2em black;
+  background: #c2f0f7;
+  color: black;
+  border-radius: 1em;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "text img";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: stretch;
+}
+#Cards .card_content ul {
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+#Cards .card_content div {
+  grid-area: text;
+  width: 80%;
+  place-self: center;
+  text-align: left;
+  display: grid;
+  gap: 1em;
+  place-items: start;
+}
+#Cards .card_content figure {
+  grid-area: img;
+  overflow: hidden;
+  margin: 0;
+}
+#Cards .card_content figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#Cards .card_content h2 {
+  font-weight: 300;
+  font-size: 2.5em;
+}
+#Cards .card_content a {
+  padding-bottom: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+#Cards .card_content a:hover {
+  text-decoration: underline;
+}
+
+/*Contact*/
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px 25px 15px;
+  color: black;
+  bottom: 0;
+  align-items: center;
+  text-align: center;
+}
+footer h3 {
+  text-decoration: underline;
+}
+footer .liens i.fab {
+  color: #00BCD4;
+  font-size: 30px;
+  padding: 0px 5px;
+}
+footer .liens a:hover i.fab {
+  color: black;
+}
+
+/*Media Queries*/
+@media (max-width: 750px) {
+  .futurPresentation {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Creation {
+    width: 98%;
+    margin: -15px;
+  }
+  #Creation .card_content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
