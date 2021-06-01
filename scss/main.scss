@@ -329,6 +329,14 @@
         h3{
             text-decoration: underline;
         }
+        p a{
+            text-decoration: none;
+            color: $Black;
+        }
+        p a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+        }
         .liens{
             i.fab{
                 color: $Blue;
