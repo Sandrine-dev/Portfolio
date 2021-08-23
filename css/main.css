@@ -44,7 +44,7 @@ header #Navigation a {
   padding: 10px;
   align-items: flex-end;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
 }
 header #Navigation a:hover {
   color: #00BCD4;
@@ -92,13 +92,14 @@ header #Navigation a:hover {
 }
 #Presentation .card h2 {
   color: #00BCD4;
+  font-size: 30px;
 }
 #Presentation .card span {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 23px;
 }
 #Presentation .card .profession {
-  font-size: 18px;
+  font-size: 20px;
 }
 #Presentation .card .button {
   background-color: #00BCD4;
@@ -106,7 +107,7 @@ header #Navigation a:hover {
 }
 #Presentation .card .button a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 #Presentation .card .button a:hover {
@@ -123,7 +124,7 @@ header #Navigation a:hover {
   cursor: pointer;
   padding: 18px;
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   outline: none;
   font-family: "Times New Roman", Times, serif;
 }
@@ -134,8 +135,10 @@ header #Navigation a:hover {
 #Presentation .content {
   padding: 0 18px;
   display: none;
+  font-size: 20px;
 }
 
+/*MyCreation*/
 /*Futur Projects*/
 #FuturProjects {
   background-color: white;
@@ -149,9 +152,13 @@ header #Navigation a:hover {
 #FuturProjects h2 {
   align-items: center;
   text-align: center;
+  font-size: 30px;
 }
 #FuturProjects h3 {
   text-decoration: underline #00BCD4;
+}
+#FuturProjects p {
+  font-size: 20px;
 }
 #FuturProjects .futurPresentation {
   display: flex;
@@ -256,9 +263,13 @@ header #Navigation a:hover {
   grid-template-rows: auto;
   align-items: stretch;
 }
+#Cards .card_content h4 {
+  font-size: 25px;
+}
 #Cards .card_content ul {
   list-style-type: none;
   padding-bottom: 10px;
+  font-size: 20px;
 }
 #Cards .card_content div {
   grid-area: text;
@@ -306,6 +317,13 @@ footer {
 }
 footer h3 {
   text-decoration: underline;
+  font-size: 25px;
+}
+footer h4 {
+  font-size: 20px;
+}
+footer p {
+  font-size: 20px;
 }
 footer p a {
   text-decoration: none;

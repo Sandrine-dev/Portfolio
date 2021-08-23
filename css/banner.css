@@ -44,6 +44,7 @@ body img {
   top: 0px;
   position: relative;
   left: 15px;
+  border-radius: 0px 50px;
 }
 #Banner .name h1 {
   position: relative;
@@ -58,6 +59,7 @@ body img {
   top: 125px;
   position: relative;
   right: 15px;
+  border-radius: 50px 0px;
 }
 #Banner .job h2, #Banner .job h3 {
   position: relative;

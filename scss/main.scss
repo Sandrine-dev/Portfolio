@@ -46,7 +46,7 @@
                 padding: 10px;
                 align-items: flex-end;
                 color: $Black;
-                font-size: 20px;
+                font-size: 25px;
                 
             }
             a:hover{
@@ -95,20 +95,21 @@
             box-shadow: 5px 10px 18px 10px $Black;
             h2{
                 color: $Blue;
+                font-size: 30px;
             }
             span{
                 font-weight: bold;
-                font-size: 18px;
+                font-size: 23px;
             }
             .profession{
-                font-size: 18px;
+                font-size: 20px;
             }
             .button{
                 background-color: #00BCD4;
                 padding: 8px;
                 a{
                     text-decoration: none;
-                    font-size: 18px;
+                    font-size: 20px;
                     color: $White;
                 }
                 a:hover{
@@ -128,7 +129,7 @@
             cursor: pointer;
             padding: 18px;
             width: 100%;
-            font-size: 18px;
+            font-size: 20px;
             outline: none;
             font-family: 'Times New Roman', Times, serif;
         }
@@ -139,8 +140,12 @@
         .content{
             padding: 0 18px;
             display: none;
+            font-size: 20px;
         }
     }
+
+/*MyCreation*/
+
 
 /*Futur Projects*/
 
@@ -155,9 +160,13 @@
         h2{
             align-items: center;
             text-align: center;
+            font-size: 30px;
         }
         h3{
             text-decoration: underline $Blue;
+        }
+        p{
+            font-size: 20px;
         }
         .futurPresentation{
             display: flex;
@@ -271,9 +280,13 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             align-items: stretch;
+            h4{
+                font-size: 25px;
+            }
             ul{
                 list-style-type: none;
                 padding-bottom: 10px;
+                font-size: 20px;
             }
             div{
                 grid-area: text;
@@ -328,6 +341,13 @@
         text-align: center;
         h3{
             text-decoration: underline;
+            font-size: 25px;
+        }
+        h4{
+            font-size: 20px;
+        }
+        p{
+            font-size: 20px;
         }
         p a{
             text-decoration: none;
