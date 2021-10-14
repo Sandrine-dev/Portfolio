@@ -399,7 +399,7 @@ body, html {
 }
 @media screen and (max-width: 710px) {
   #Projects #ProjectsBck {
-    padding: 10px 0px;
+    padding: 20px 0px;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -468,7 +468,7 @@ body, html {
 }
 @media screen and (max-width: 465px) {
   #Skills {
-    margin-bottom: 75px;
+    margin-bottom: 5rem;
   }
 }
 
