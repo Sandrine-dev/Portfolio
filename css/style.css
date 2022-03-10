@@ -1,10 +1,12 @@
 @charset "UTF-8";
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
 }
 
 .reveal {
@@ -49,7 +51,8 @@ body, html {
 #Head a:hover {
   background-color: rgba(253, 250, 250, 0.5);
 }
-#Head a:hover h1, #Head a:hover h3 {
+#Head a:hover h1,
+#Head a:hover h3 {
   color: black;
 }
 
@@ -71,7 +74,7 @@ body, html {
   font-size: 20px;
 }
 .topnav a:hover {
-  background-color: #00BCD4;
+  background-color: #00bcd4;
   color: black;
   font-weight: bold;
 }
@@ -135,19 +138,20 @@ body, html {
   padding: 0px 35px;
 }
 #Skills #SkillsInfo .vl {
-  border-left: 6px solid #00BCD4;
+  border-left: 6px solid #00bcd4;
   height: auto;
 }
 #Skills #SkillsInfo h3 {
   font-size: 23px;
 }
-#Skills #SkillsInfo li, #Skills #SkillsInfo h4 {
+#Skills #SkillsInfo li,
+#Skills #SkillsInfo h4 {
   font-size: 18px;
   list-style: none;
 }
 #Skills #SkillsInfo ul li::before {
   content: "•";
-  color: #00BCD4;
+  color: #00bcd4;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -162,7 +166,7 @@ body, html {
 }
 #Skills #SkillsUpgrade a {
   text-decoration: none;
-  color: #00BCD4;
+  color: #00bcd4;
   font-weight: bold;
 }
 
@@ -190,7 +194,7 @@ body, html {
 }
 #Projects #ProjectTitre h2 {
   color: white;
-  border: solid 2px #00BCD4;
+  border: solid 2px #00bcd4;
   margin: 4px;
   padding: 55px 25px;
   font-size: 65px;
@@ -212,7 +216,7 @@ body, html {
 }
 #Projects #ProjectList ul li::before {
   content: "•";
-  color: #00BCD4;
+  color: #00bcd4;
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -255,7 +259,7 @@ body, html {
 }
 #Site #AllSite .infosSite a {
   text-decoration: none;
-  color: #00BCD4;
+  color: #00bcd4;
   font-size: 24px;
   font-weight: bold;
 }
@@ -266,7 +270,7 @@ body, html {
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #00BCD4;
+  background-color: #00bcd4;
   cursor: pointer;
   font-weight: bold;
   font-size: 20px;
@@ -295,7 +299,7 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #00BCD4;
+  background-color: #00bcd4;
 }
 #Contact #AllContact {
   margin: 0px 25px;
