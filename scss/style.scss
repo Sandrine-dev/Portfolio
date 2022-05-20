@@ -257,77 +257,68 @@
 #Site{
   margin: 0px 25px;
   padding: 25px;
-  #myBtnContainer{
-    margin-top: 35px;
-  }
+ 
   #AllSite {
-    margin: 8px -16px;
-    padding: 8px;
-    align-self: center;
-    .column{
-      float: left;
-      width: 30%;
-      display: none;
-      .content{
-        background-color: rgba(0, 0, 0, 0.1);
-        border: dashed 2px rgba(0, 0, 0, 0.1);
-        padding: 10px;
+  margin: 8px -16px;
+  padding: 8px;
+  align-self: center;
+    .column {
+    float: left;
+    width: 30%;
+     .content{
+      height: auto;
+      margin-right: 25px;
+      border: dashed 2px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      .liens{
+          margin-top: 5px;
+          a{
+            padding-right: 10px;
+            text-decoration: none;
+            color: #00bcd4;
+            font-size: 24px;
+            font-weight: bold;
+          }
+          a:hover {
+            color: black;
+          }
+        }
       }
     }
-    .show {
-      display: block;
-    }
-    img{
+    img {
       width: 100%;
     }
-    .infosSite {
     h4 {
       font-size: 20px;
     }
-    p{
+    p {
       text-align: justify;
     }
-    a{
-      text-decoration: none;
-      color: $Blue;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    a:hover{
-      color: black;
-    }
-    }
-
   }
-  .btn{
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    background-color: $Blue;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 2px;
-  }
-  .btn:hover{
-    background-color: white;
-    color: black;
-  }
-  .btn.active{
-    background-color: black;
-    color: white;
-  }
-}
-
-#AllSite > .column{
-  padding: 8px;
-}
-
-#AllSite:after{
+  #AllSite:after {
   content: "";
   display: table;
   clear: both;
+  }
+
+
+
+   .row {
+  margin: 5% 8%;
+  }
+
+  
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+
+  
+  
 }
+
+
+
   
 //Footer
 
@@ -450,6 +441,7 @@
 @media screen and(max-width: 900px) {
   #Skills{
     background-image: inherit;
+    margin-bottom: -500px;
     h2{
       padding-top: 5px;
     }
@@ -478,6 +470,9 @@
         width: auto;
       }
     }
+  }
+  #Site{
+    margin-top: -300px;
   }
 }
 

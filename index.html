@@ -98,149 +98,125 @@
       </div>
     </section>
 
-        <!--Projects-->
-      <section id="Projects" >
-        <div id="ProjectsBck" class="reveal">
-          <div id="ProjectTitre">
-            <h2>Projets</h2>
-          </div>
-          <div id="ProjectList">
-            <ul>
-              <li><span>Refonte d'un site vitrine en site marchand</span><br>
-              Le client souhaite pouvoir faire une vente de ses produits en ligne. Le site étant lent à l'affichage, il devra aussi être revu pour une optimisation.</li>
-              <li><span>Création d'un site pour un jeu</span><br>
-              Je souhaite mettre en place un site d'astuce pour un jeu afin de permettre à ses joueurs de si retrouver plus facilement</li>
-              <li><span>Une librairie Personnalisée</span><br>
-              Je voudrais me créer une librairie Personnalisée contenant du Javascript mais aussi du PHP. </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
     <!--Realization-->
     <section id="Site">
-      <div id="myBtnContainer" class="reveal">
-        <button class="btn active" onclick="filterSelection('all')">Tous</button>
-        <button class="btn" onclick="filterSelection('HtmlCss')">Html & Css</button>
-        <button class="btn" onclick="filterSelection('Javascript')">Javascript</button>
-        <button class="btn" onclick="filterSelection('Bootstrap')">Bootstrap</button>
-        <button class="btn" onclick="filterSelection('NodeJS')">NodeJS</button>
-        <button class="btn" onclick="filterSelection('VueJS')">VueJS</button>
-        <button class="btn" onclick="filterSelection('SQL')">SQL</button>
-        <button class="btn" onclick="filterSelection('MongoDB')">MongoDB</button>
-        <button class="btn" onclick="filterSelection('FileZilla')">FileZilla</button>
-        <button class="btn" onclick="filterSelection('PHPMyadmin')">PHP My Admin</button>
-        <button class="btn" onclick="filterSelection('LocalStorage')">LocalStorage</button>
-
-      </div>
-
-      <div>
-        <div id="AllSite">
-          <div class="column Javascript HtmlCss reveal">
-            <div class="content">
+      <h2 class="reveal">Mon experience:</h2>
+      <div >
+        <div id="AllSite" class="row">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/little_projects.jpg" alt="Little Projects">
-              <div class="infosSite">
-                <h4>Little projects</h4>
-                <p>Ce site me sert d'image pour tous les petits projets que je tente, je vais poster dessus de petite fonctionalité, animation, site vitrine, et surtout m'en servir pour tester threeJs, canvas, Php... etc. Il sera fourni au fur et à mesure. </p>
-                <div class="liens">
-                  <a href="https://sandrine-dev.github.io/Little_projects/" target="_blank"><i class="fas fa-home"></i></a>
-                </div>
+              <h4>Little projects</h4>
+              <p>Coffre fort pour les projets que j'entreprends. Je vais poster plusieurs fonctionnalités, animations et site vitrine. </p>
+              <div class="liens">
+                  <a href="https://github.com/Sandrine-dev/Little_projects" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://sandrine-dev.github.io/Little_projects/" target="_blank"><i class="fas fa-home"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="column Javascript HtmlCss FileZilla PHPMyadmin reveal">
-            <div class="content">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/Site_gite.jpg" alt="Site des gîtes de Chaillac">
-              <div class="infosSite">
-                <h4>Les gîtes de Chaillac</h4>
-                <p>Création d'un site pour des gîtes se trouvant en Corrèze. Il y a la possibilité de voir le calendrier de réservation, les tarifs et de déposer des avis. L'interface a été créer en collaboration avec le gérant du site, il s'est occupé de la base de données et du PHP. </p>
-                <div class="liens">
-                  <a href="https://www.gites.brunovolpi.com/" target="_blank"><i class="fas fa-home"></i></a>
-                </div>
+              <h4>Les gîtes de Chaillac</h4>
+              <p>Création d'un site pour des gîtes se trouvant en Corrèze. L'interface a été créer en collaboration avec le gérant du site. J'ai utilisé du Javascript, CSS et HTML.</p>
+              <div class="liens">
+                <a href="https://www.gites.brunovolpi.com/" target="_blank"><i class="fas fa-home"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="column Javascript Bootstrap NodeJS VueJS HtmlCss SQL PHPMyadmin reveal">
-            <div class="content">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/Site_Groupomania.jpg" alt="Site du résaux social d'entreprise de Site_Groupomania">
-              <div class="infosSite">
-              <h4>Création d'un réseau social d’entreprise</h4>
-              <p>Création d'un réseau social d'entreprise où chacun doit s'identifier pour accéder aux publications, il faut aussi pouvoir s'y inscrire facilement depuis un téléphone. Les personnes ont la possibilité de partager des photos et des gifs et garder tous en mémoire avec une base de données SQL.</p>
+              <h4>Réseau social d’entreprise</h4>
+              <p>Ce site contient MySQL, Javascript, VueJs et sequelize. J'ai pu dévelloper la base de donnée, le back-end et le front-end.</p>
               <div class="liens">
                 <a href="https://github.com/Sandrine-dev/OpenClassroomProject7" target="_blank"><i class="fab fa-github"></i></a>
               </div>
             </div>
-            </div>
           </div>
+        </div>
 
-          <div class="column Javascript NodeJS MongoDB reveal">
-            <div class="content">
+        <div class="row" id="AllSite">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/Site_Piquante.jpg" alt="Site de sauce piquante">
-              <div class="infosSite">
-                <h4>Construction d'une API sécurisée</h4>
-                <p>Création d'une base de données avec MongoDB afin que les personnes puissent s'inscrire sur le site et de partager leurs sauces favorites mais aussi de les noter. Mettre en œuvre des opérations CRUD de manière sécurisée, implémenter un modèle logique de donné conformément à la réglementation.</p>
-                <div class="liens">
-                  <a href="https://github.com/Sandrine-dev/OpenClassroomProject6" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+              <h4>API sécurisée</h4>
+              <p>Avec l'aide de MongoDB j'ai créer une base de donnée en mettant en oeuvre des opérations CRUD de manière sécurisée.</p>
+              <div class="liens">
+                <a href="https://github.com/Sandrine-dev/OpenClassroomProject6" target="_blank"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="column Javascript Bootstrap HtmlCss NodeJS LocalStorage reveal">
-            <div class="content">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/Site_Orinoco.JPG" alt="Site de vente d'Orinoco">
-              <div class="infosSite">
-                <h4>Construire un site e-commerce</h4>
-                <p>Création d'un site de vente de peluche grâce à une base de données déjà existante et intéragir avec Javascript. Mettre en place un panier qui prendra en compte tous les produits choisis avec la couleur définie. Une fois les achats faits, faire disparaitre les infos du LocalStorage.</p>
-                <div class="liens">
-                  <a href="https://github.com/Sandrine-dev/OpenClassroomProject5" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+              <h4>Site de  e-commerce</h4>
+              <p>J'ai utilisé Bootstrap pour le visuel et le javascript afin de communiquer avec la base de donnée. Chaque information est passé par le localStorage. </p>
+              <div class="liens">
+                <a href="https://github.com/Sandrine-dev/OpenClassroomProject5" target="_blank"><i class="fab fa-github"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="column HtmlCss reveal">
-            <div class="content">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/Site_LaChouetteAgence.jpg" alt="Site vitrine La chouette agnce">
-              <div class="infosSite">
-                <h4>Optimiser un site web existant</h4>
-                <p>Analyse de l’état actuel de SEO du site fournit afin de comprendre où sont les erreurs commises et ainsi pouvoir les corriger afin que le site soit conforme à la réglementation. Assurer l'accessibilité du site et écrire un code maintenable. Optimise la taille et la vitesse du site.</p>
-                <div class="liens">
-                  <a href="https://github.com/Sandrine-dev/OpenClassroomProject4corrige" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+              <h4>Optimiser un site web existant</h4>
+              <p>Utilisation des règles de SEO afin de rendre le site plus performant et de corriger les erreurs de réglementation.</p>
+              <div class="liens">
+                <a href="https://github.com/Sandrine-dev/OpenClassroomProject4corrige" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://sandrine-dev.github.io/OpenclassroomProject4corrige/" target="_blank"><i class="fas fa-home"></i></a>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="column HtmlCss NodeJS reveal">
-            <div class="content">
+        <div class="row" id="AllSite">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/Site_OhMyFood.jpg" alt="Site de Oh my food">
-              <div class="infosSite">
-                <h4>Dynamiser une page web avec des animations CSS</h4>
-                <p>Mettre en place une structure de navigation pour un site Web, mais aussi des effets CSS graphiques.  Il faut assurer la cohérence du site web selon la maquette donnée, donc choisir les bonnes polices de caractères mais aussi les couleurs et dégradés demandés. </p>
-                <div class="liens">
-                  <a href="https://github.com/Sandrine-dev/OpenClassroomProject3" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+              <h4>Dynamiser une page web avec des animations CSS</h4>
+              <p>Graçe à une maquette j'ai dévellopé se site et mit en place différente animations avec du CSS.</p>
+              <div class="liens">
+                <a href="https://github.com/Sandrine-dev/OpenClassroomProject3" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://sandrine-dev.github.io/OpenclassroomProject3/" target="_blank"><i class="fas fa-home"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="column HtmlCss reveal">
-            <div class="content">
+          <div class="column">
+            <div class="content reveal">
               <img src="./images/Site_Curriculum.jpg" alt="Curriculum">
-              <div class="infosSite">
-                <h4>Création du Curriculum-vitae</h4>
-                <p>Mettre en place un environement front-end et utiliser les balises correctement en HTML et Css, savoir gérer une bonne indentation et permettre une interface responsive peu importe le support utilisé. Mettre en place le Mobil first et utiliser les médias Queries. </p>
-                <div class="liens">
-                  <a href="https://github.com/Sandrine-dev/OpenClassroomProject2" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
+              <h4>Création du Curriculum-vitae</h4>
+              <p>Ce site a été codé en mobil first, j'ai utilisé le HTML et le CSS. </p>
+              <div class="liens">
+                <a href="https://github.com/Sandrine-dev/OpenClassroomProject2" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://sandrine-dev.github.io/OpenclassroomProject2/" target="_blank"><i class="fas fa-home"></i></a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!--Projects-->
+    <section id="Projects" >
+        <div id="ProjectsBck" class="reveal">
+          <div id="ProjectTitre">
+            <h2>Projets </br> Personnel</h2>
+          </div>
+          <div id="ProjectList">
+            <ul>
+              <li><span>Création d'un site pour un jeu</span><br>
+              Sur mon temps libre, je mets actuellement en place un site d'information de jeux, afin de permettre à ses joueurs de pouvoir trouver des astuces et codes utiles.</li>
+              <li><span>Une librairie Personnalisée</span><br>
+              Je me construit une site de librairie personnalisée afin de trouver et utiliser des fonctionalité plus rapidement.</li>
+            </ul>
+          </div>
+        </div>
     </section>
 
     <!--Library
@@ -266,7 +242,7 @@
         </div>
         <div id="Copywright">
             <p>	&copy; Sandrine Volpi
-            <br><span>Mise à jour:</span> 09/05/2022</p>
+            <br><span>Mise à jour:</span> 20/05/2022</p>
         </div>
       </div>
     </footer>
