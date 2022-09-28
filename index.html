@@ -1,271 +1,950 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <!--Style-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
-    <title>Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
 
-  </head>
-  <body>
-    <!--Header-->
-    <header id="Head">
-      <a href="#About" id="Title" class="reveal">
-        <h1>Sandrine Volpi, Développeur Web</h1>
-        <!--<h3>Front end</h3>-->
-      </a>
-    </header> 
+        <title>Portfolio Sandrine Volpi</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Sandrine Volpi</a>
 
-    <!--Navigation-->
-    <div id="Navigation" >
-      <div class="topnav" id="MyTopnav">
-        <a href="VersEng.html" id="ChangLang">English</a> 
-        <a href="#Skills" >Compétences</a>
-        <a href="#Site" >Sites</a> 
-        <a href="#Projects" >Projets</a>
-        <!--<a href="#Library" >Librairies</a>-->
-        <a href="#Contact" >Contact</a>
-        <a href="CV.pdf"  target="_blank" >Curriculum vitae</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> <p class="fr">Accueil</p>
+                                <p class="eng">Home</p>
+                            </a>
+                        </li>
+                         <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> 
+                                <p class="fr">À propos</p>
+                                <p class="eng">About</p>
+                            </a>
+                        </li>
+                         <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> <p class="fr">Compétences</p>
+                                <p class="eng">Skills</p>
+
+                            </a>
+                        </li>
+                         <li class="nav__item">
+                            <a href="#qualification" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> 
+                                <p class="fr">Parcours</p>
+                                <p class="eng">Qualification</p>
+                            </a>
+                        </li>
+                         <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> <p>Protfolio</p>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> <p>Contact</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="nav__btns" id="language-button">
+                        <!--language change button-->
+                        <img src="img/united-kingdom.png" class="fr lang__icon">
+                        <img src="img/france.png" class="eng lang__icon" >
+                    </div>
+                    <!--Theme change button-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--HOME-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha">
+                                   <path  d="M 292.00,175.56
+                                    C 306.74,172.99 325.31,187.88 337.00,195.98
+                                    372.98,220.88 410.16,256.80 436.12,292.00
+                                    436.12,292.00 456.00,321.00 456.00,321.00
+                                    459.38,326.13 462.56,332.78 468.00,335.91
+                                    472.19,338.32 483.00,338.99 488.00,339.00
+                                    488.00,339.00 535.00,339.00 535.00,339.00
+                                    539.98,338.99 551.89,338.27 556.00,335.91
+                                    561.52,332.74 565.16,325.28 568.67,320.00
+                                    568.67,320.00 591.65,287.00 591.65,287.00
+                                    616.79,254.38 651.24,220.91 685.00,197.28
+                                    694.58,190.57 714.62,175.87 726.00,175.10
+                                    735.54,174.44 739.73,179.32 744.13,187.00
+                                    748.34,194.36 755.85,213.57 758.67,222.00
+                                    770.93,258.66 777.06,286.61 781.16,325.00
+                                    781.16,325.00 783.00,348.00 783.00,348.00
+                                    783.00,348.00 783.00,387.00 783.00,387.00
+                                    783.00,387.00 779.85,425.00 779.85,425.00
+                                    779.41,431.26 778.00,437.79 779.85,444.00
+                                    781.12,448.64 788.77,461.03 791.58,466.00
+                                    791.58,466.00 807.69,498.00 807.69,498.00
+                                    821.97,529.19 832.57,561.77 840.87,595.00
+                                    840.87,595.00 847.75,628.00 847.75,628.00
+                                    848.72,633.57 850.24,641.52 849.19,647.00
+                                    846.89,658.97 838.69,661.15 828.00,662.73
+                                    806.55,665.89 785.62,670.95 765.00,677.67
+                                    713.02,694.62 664.68,720.87 621.00,753.63
+                                    621.00,753.63 595.00,774.15 595.00,774.15
+                                    578.44,788.71 558.78,806.56 544.28,823.00
+                                    537.55,830.64 524.67,847.35 515.00,849.47
+                                    503.93,851.89 495.11,840.27 488.72,833.00
+                                    488.72,833.00 479.72,823.00 479.72,823.00
+                                    455.49,795.52 421.90,766.80 392.00,745.43
+                                    349.09,714.76 296.76,688.30 246.00,673.71
+                                    230.86,669.36 215.60,665.57 200.00,663.27
+                                    191.38,662.00 181.88,661.30 176.85,653.00
+                                    173.28,647.10 174.84,636.55 175.92,630.00
+                                    175.92,630.00 187.71,577.00 187.71,577.00
+                                    195.26,550.45 206.01,518.64 218.25,494.00
+                                    218.25,494.00 233.42,464.00 233.42,464.00
+                                    236.28,458.95 243.51,447.10 244.61,442.00
+                                    245.76,436.68 244.57,430.33 244.07,425.00
+                                    244.07,425.00 241.00,388.00 241.00,388.00
+                                    241.00,388.00 241.00,348.00 241.00,348.00
+                                    241.00,348.00 241.91,336.00 241.91,336.00
+                                    244.52,298.08 251.66,259.86 264.59,224.00
+                                    264.59,224.00 277.76,191.00 277.76,191.00
+                                    281.35,183.72 283.91,178.39 292.00,175.56 Z" />
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path  d="M 292.00,175.56
+                                        C 306.74,172.99 325.31,187.88 337.00,195.98
+                                        372.98,220.88 410.16,256.80 436.12,292.00
+                                        436.12,292.00 456.00,321.00 456.00,321.00
+                                        459.38,326.13 462.56,332.78 468.00,335.91
+                                        472.19,338.32 483.00,338.99 488.00,339.00
+                                        488.00,339.00 535.00,339.00 535.00,339.00
+                                        539.98,338.99 551.89,338.27 556.00,335.91
+                                        561.52,332.74 565.16,325.28 568.67,320.00
+                                        568.67,320.00 591.65,287.00 591.65,287.00
+                                        616.79,254.38 651.24,220.91 685.00,197.28
+                                        694.58,190.57 714.62,175.87 726.00,175.10
+                                        735.54,174.44 739.73,179.32 744.13,187.00
+                                        748.34,194.36 755.85,213.57 758.67,222.00
+                                        770.93,258.66 777.06,286.61 781.16,325.00
+                                        781.16,325.00 783.00,348.00 783.00,348.00
+                                        783.00,348.00 783.00,387.00 783.00,387.00
+                                        783.00,387.00 779.85,425.00 779.85,425.00
+                                        779.41,431.26 778.00,437.79 779.85,444.00
+                                        781.12,448.64 788.77,461.03 791.58,466.00
+                                        791.58,466.00 807.69,498.00 807.69,498.00
+                                        821.97,529.19 832.57,561.77 840.87,595.00
+                                        840.87,595.00 847.75,628.00 847.75,628.00
+                                        848.72,633.57 850.24,641.52 849.19,647.00
+                                        846.89,658.97 838.69,661.15 828.00,662.73
+                                        806.55,665.89 785.62,670.95 765.00,677.67
+                                        713.02,694.62 664.68,720.87 621.00,753.63
+                                        621.00,753.63 595.00,774.15 595.00,774.15
+                                        578.44,788.71 558.78,806.56 544.28,823.00
+                                        537.55,830.64 524.67,847.35 515.00,849.47
+                                        503.93,851.89 495.11,840.27 488.72,833.00
+                                        488.72,833.00 479.72,823.00 479.72,823.00
+                                        455.49,795.52 421.90,766.80 392.00,745.43
+                                        349.09,714.76 296.76,688.30 246.00,673.71
+                                        230.86,669.36 215.60,665.57 200.00,663.27
+                                        191.38,662.00 181.88,661.30 176.85,653.00
+                                        173.28,647.10 174.84,636.55 175.92,630.00
+                                        175.92,630.00 187.71,577.00 187.71,577.00
+                                        195.26,550.45 206.01,518.64 218.25,494.00
+                                        218.25,494.00 233.42,464.00 233.42,464.00
+                                        236.28,458.95 243.51,447.10 244.61,442.00
+                                        245.76,436.68 244.57,430.33 244.07,425.00
+                                        244.07,425.00 241.00,388.00 241.00,388.00
+                                        241.00,388.00 241.00,348.00 241.00,348.00
+                                        241.00,348.00 241.91,336.00 241.91,336.00
+                                        244.52,298.08 251.66,259.86 264.59,224.00
+                                        264.59,224.00 277.76,191.00 277.76,191.00
+                                        281.35,183.72 283.91,178.39 292.00,175.56 Z" />
+                                    <image  class="home__blob-img" x="255" y="350" href="img/avataaars.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Sandrine</h1>
+                            <h3 class="home__subtitle"> 
+                                <span class="fr">Web developpeuse</span> 
+                                <span class="eng">Web developer</span></h3>
+                            <p class="home__description"> 
+                                <span class="fr">Je suis une développeuse web spécialisé dans le Frontend, avec l'ambition de devenir FullStack.</span> 
+                                <span class="eng">I am a web developer specialized in Frontend, with the ambition to become FullStack.</span></p>
+                            <a href="#contact" class="button button--flex">
+                                <p class="fr">Contactez-moi</p> 
+                                <p class="eng">Contact Me</p><i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--ABOUT-->
+            <section class="about section" id="about">
+                <h2 class="section__title">
+                    <span class="fr">À propos de moi</span>
+                    <span class="eng">About Me</span></h2>
+                <span class="section__subtitle">
+                    <span class="fr">Ma présentation</span>
+                    <span class="eng">My presentation</span>
+                </span>
+
+                <div class="about__container container grid">
+                    <img src="img/Background_projects_2.png" alt="computer" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description"> 
+                            <span class="fr">Je suis sortie diplômée de la formation web développeur d'Open Classroom. Je suis spécialisé dans le Frontend. Je parle couramment l'anglais.</span> 
+                            <span class="eng">I graduated from the Open Classroom web developer training. I specialize in Frontend. I speak English fluently.</span></p>
+
+                            
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">01+</span>
+                                <span class="about__info-name">
+                                    <span class="fr">Années <br> d'expérience</span><span class="eng">Years <br> experience</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">07+</span>
+                                <span class="about__info-name">
+                                    <span class="fr">Projets <br> complété</span>
+                                    <span class="eng">Completed <br> projects</span>
+                                </span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">01+</span>
+                                <span class="about__info-name">
+                                    <span class="fr">Projets <br> en cours</span>
+                                    <span class="eng">Ongoing <br> projects</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="pdf/CVC.pdf" href="#" class="button button--flex fr">
+                                <span>Télécharger CV</span>
+                                <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+
+                            <a download="pdf/CV english.pdf" href="#" class="button button--flex eng">
+                                <span>Download CV</span>
+                                <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!--SKILLS-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">
+                    <span class="fr">Compétences</span>
+                    <span class="eng">Skills</span>
+                </h2>
+                <span class="section__subtitle">
+                </span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--skill 1-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title"><span class="fr">Langages Web</span>
+                                        <span class="eng">Web langages</span></h1>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__html"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__css"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__js"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">VueJs</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__vue"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PHP</h3>
+                                        <span class="skills__number">10%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__php"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__sql"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">NodeJs</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__node"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Jquery</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__jquery"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--skill 2-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">
+                                        <span class="fr">Téchnologies</span>
+                                        <span class="eng">Technologies</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__bootstrap"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">GitHub</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__git"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Visual Studio Code</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__visual"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Wamp</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__wamp"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Gimp</h3>
+                                        <span class="skills__number">30%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__gimp"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Wordpress</h3>
+                                        <span class="skills__number">10%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__word"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--skill 3-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">
+                                        <span class="fr">Outil informatique</span>
+                                        <span class="eng">Informatic tool</span></h1>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SEO</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__seo"></div>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Postman</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__post"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Word - Excel</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <div class="skills__percentage skills__we"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--QUALIFICATION-->
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">Qualification</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="qualification__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon "></i>
+                            Education
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            <span class="eng">Work</span>
+                            <span class="fr">Experience</span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--Qualification content 1-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                            <!--Qualification 1-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title fr">Diplome Web developer</h3>
+                                    <h3 class="qualification__title eng">Web developer Diploma</h3>
+                                    <span class="qualification__subtitle">Open Classroom</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--Qualification 2-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title fr">Certification d'Anglais</h3>
+                                    <h3 class="qualification__title eng">English certification</h3>
+                                    <span class="qualification__subtitle">University of New Hampshire at Manchester</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2018
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Qualification 3-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">  </h3>
+                                    <h3 class="qualification__title"> 
+                                        <span class="fr">Diplôme Premier secours</span>
+                                        <span class="eng">First aid diploma</span> 
+                                    </h3>
+                                    <span class="qualification__subtitle"></span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2016
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--Qualification 4-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!--<span class="qualification__line"></span>-->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title"> 
+                                        <span class="fr">Baccalauréat Sciences et téchnologies de la gestion</span>
+                                        <span class="eng">Baccalaureate in Management</span>
+                                    </h3>
+                                    <span class="qualification__subtitle">Lycée Edmond Perrier</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2012
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Qualification content 2-->
+                        <div class="qualification__content" data-content id="work">
+                            <!--Qualification 1-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title fr">Agent d'accueil</h3>
+                                    <h3 class="qualification__title eng">Accueil Agent</h3>
+                                    <span class="qualification__subtitle">Ehpad les milles sources</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021 ~ 2022
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--Qualification 2-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title fr">Réceptionniste</h3>
+                                    <h3 class="qualification__title eng">Receptionist</h3>
+                                    <span class="qualification__subtitle">Flower camping</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2019
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Qualification 3-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title fr">Jeune fille au pair</h3>
+                                    <h3 class="qualification__title eng">Au pair</h3>
+                                    <span class="qualification__subtitle">Au pair in America</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2017 ~ 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--Qualification 4-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!--<span class="qualification__line"></span>-->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title fr">Assitante d'éducation</h3>
+                                    <h3 class="qualification__title eng">Education assitante</h3>
+                                    <span class="qualification__subtitle">Collège Maupassant</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i> 2021
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--PORTFOLIO-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="portfolio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--PORTFOLIO 1-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src='img/ma_libraire.png'>
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title fr">Ma libairie</h3>
+                                <h3 class="portfolio__title eng">My library</h3>
+                                <p class="portfolio__description"> 
+                                    <span class="fr">
+                                        Petite libairie personnelle afin de pouvoir travailler plus rapidement et plus efficacement
+                                    </span>
+                                    <span class="eng">
+                                            Small personal library to work faster and more efficiently
+                                    </span>
+                                    </p>
+                                <a href="https://sandrine-dev.github.io/My-library/" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--PORTFOLIO 2-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img " src="img/little_projects.jpg">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title eng">Little projects</h3>
+                                <h3 class="portfolio__title fr">Petit projet</h3>
+                                <p class="portfolio__description"> 
+                                    <span class="fr">Coffre fort pour les projets que j'entreprends. Je vais poster plusieurs fonctionnalités, animations et site vitrine.</span>
+                                    <span class="eng">Safe for projects I undertake. I will post several features, animations and showcase site.</span></p>
+                                <a href="https://sandrine-dev.github.io/Little_projects/" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--PORTFOLIO 3-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src="img/Site_gite.jpg">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Les gîtes de Chaillac</h3>
+                                <p class="portfolio__description"> <span class="fr">Création d'un site pour des gîtes se trouvant en Corrèze. L'interface a été créer en collaboration avec le gérant du site. J'ai utilisé du Javascript, CSS et HTML.</span>
+                                    <span class="eng">Creation of a site for gites in Corrèze. The interface was created in collaboration with the site manager. I used Javascript, CSS and HTML.</span>
+                                 </p>
+                                <a href="https://www.gites.brunovolpi.com/" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--PORTFOLIO 4-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src="img/Site_Groupomania.jpg">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title fr">Réseau social d’entreprise</h3>
+                                <h3 class="portfolio__title eng">enterprise social network</h3>
+                                <p class="portfolio__description">
+                                    <span class="fr">Ce site contient MySQL, Javascript, VueJs et sequelize. J'ai pu dévelloper la base de donnée, le back-end et le front-end.</span>
+                                    <span class="eng">This site contains MySQL, Javascript, VueJs and sequelize. I was able to develop the database, back-end and front-end.</span>
+                                </p>
+                                <a href="https://github.com/Sandrine-dev/OpenClassroomProject7" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--PORTFOLIO 5-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src="img/Site_Piquante.jpg">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title fr">API sécurisée</h3>
+                                <h3 class="portfolio__title eng">secure API</h3>
+                                <p class="portfolio__description"> 
+                                    <span class="fr">Avec l'aide de MongoDB j'ai créer une base de donnée en mettant en oeuvre des opérations CRUD de manière sécurisée.</span>
+                                    <span class="eng">With the help of MongoDB I created a database by implementing CRUD operations in a secure way.</span></p>
+                                <a href="https://github.com/Sandrine-dev/OpenClassroomProject6" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--PORTFOLIO 6-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src="img/Site_Orinoco.JPG">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Site de  e-commerce</h3>
+                                <p class="portfolio__description">J'ai utilisé Bootstrap pour le visuel et le javascript afin de communiquer avec la base de donnée. Chaque information est passé par le localStorage.  </p>
+                                <a href="https://github.com/Sandrine-dev/OpenClassroomProject5" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--PORTFOLIO 7-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src="img/Site_LaChouetteAgence.jpg">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title fr">Optimiser un site web existant</h3>
+                                <h3 class="portfolio__title eng">Optimize an existing website</h3>
+                                <p class="portfolio__description">
+                                    <span class="fr">Utilisation des règles de SEO afin de rendre le site plus performant et de corriger les erreurs de réglementation.</span>
+                                    <span class="eng"> Use of SEO rules to improve site performance and correct regulatory errors.</span> 
+                                </p>
+                                <a href="https://sandrine-dev.github.io/OpenclassroomProject4corrige/" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!--PORTFOLIO 8-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src="img/Site_OhMyFood.jpg">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title fr">Dynamiser une page web avec des animations CSS</h3>
+                                <h3 class="portfolio__title eng">Boost a web page with CSS animations</h3>
+                                <p class="portfolio__description">
+                                    <span class="fr">Graçe à une maquette j'ai dévellopé se site et mit en place différente animations avec du CSS.</span>
+                                    <span class="eng">Thanks to a model I developed this site and set up different animations with CSS.</span> </p>
+                                <a href="https://sandrine-dev.github.io/OpenclassroomProject3/" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                         <!--PORTFOLIO 9-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img class="portfolio__img" src="img/Site_Curriculum.jpg">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title fr">Création du Curriculum-vitae</h3>
+                                <h3 class="portfolio__title eng">Creation of the Curriculum Vitae</h3>
+                                <p class="portfolio__description">
+                                    <span class="fr">Ce site a été codé en mobil first, j'ai utilisé le HTML et le CSS.</span>
+                                    <span class="eng">This site was coded in mobil first, I used HTML and CSS.</span>
+                                </p>
+                                <a href="https://sandrine-dev.github.io/OpenclassroomProject2/" class="button button--flex button--small portfolio__button" target="_blank">
+                                    Demo
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-porfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-porfolio-icon"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--PROJECT IN MIND-->
+            <!--<section class="project section">
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title">My futur project</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>-->
+
+            <!--CONTACT ME-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">
+                    <span class="fr">Contactez-moi</span>
+                    <span class="eng">Contact Me</span>
+                </h2>
+                <span class="section__subtitle"></span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">
+                                    <span class="eng">Call Me</span>
+                                    <span class="fr">Téléphone</span>
+                                </h3>
+                                <span class="contact__subtitle">+33 6 89 25 07 96</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">sandrine.volpi@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Sandrine</h1>
+                        <span class="footer__subtitle fr">développeur web</span>
+                        <span class="footer__subtitle eng">web developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                         <li>
+                            <a href="#Skilla" class="footer__link">
+                                <span class="fr">Compétences</span>
+                                <span class="eng">Skills</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; SandrineDev <br>Design by &#169; Bedimcode</p>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
-      </div>
-    </div>
-
-    <!--About-->
-    <section id="About">
-      <h3>Diplôme Open Classroom:</br></br> Certification de développeur web RNCP niveau 5 (bac + 2) </h3>
-      <div class="content reveal">
-        <div class="flip-box">
-          <div class="flip-box-inner">
-            <div class="flip-box-front">
-              <img src="./images/Open.jpg" alt="Open classroom">
-            </div>
-            <div class="flip-box-back tooltip">
-              <img src="./images/diplome.jpg" alt="diplome">
-              <span class="tooltiptext">Certification de développeur web RNCP niveau 5 (bac + 2)</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!--Skills-->
-    <section id="Skills">
-
-      <h2 class="reveal">Mes Compétences :</h2>
-
-      <div id="SkillsInfo" class="reveal">
-        <div id="SoftSkills">
-          <h3>Soft skills :</h3>
-          <ul>
-            <li>Intégrité</li>
-            <li>Travail d'équipe</li>
-            <li>Adaptabilité</li>
-            <li>Volonté d'Apprendre</li>
-            <li>Ouverture d'esprit</li>
-          </ul>
-        </div>
-        <div class="vl"></div>
-
-        <div id="HardSkills">
-          <h3>Hard skills :</h3>
-
-          <div id="HardSkillsInfo">
-            <div class="column">
-              <h4>Languages :</h4>
-              <ul>
-                <li>Anglais bilinge</li>
-                <li>Javascript</li>
-                <li>HTML 5</li>
-                <li>CSS</li>
-                <li>JQuery</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-
-            <div class="vl column"></div>
-
-            <div>
-              <h4>Téchnologies :</h4>
-              <ul>
-                <li>VueJs</li>
-                <li>NodeJS</li>
-                <li>Github</li>
-                <li>Visual Studio</li>
-                <li>Bootstrap</li>
-                <li>Wamp</li>
-                <li>SEO</li>
-                <li>FileZilla</li>
-                <li>Gimp/Photoshop</li>
-              </ul>
-            </div>
-          </div>            
-        </div>
-      </div>
-      <div id="SkillsUpgrade" class="reveal">
-        <p>J'apprends à utiliser <a href="" class="typewrite" data-period="2000" data-type='[ "PHP", "React", "Angular", "Wordpress"]'>
-          <span class="wrap"></span></a> </p>
-      </div>
-    </section>
-
-    <!--Realization-->
-    <section id="Site">
-      <h2 class="reveal">Mon experience:</h2>
-      <div >
-        <div id="AllSite" class="row">
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/little_projects.jpg" alt="Little Projects">
-              <h4>Little projects</h4>
-              <p>Coffre fort pour les projets que j'entreprends. Je vais poster plusieurs fonctionnalités, animations et site vitrine. </p>
-              <div class="liens">
-                  <a href="https://github.com/Sandrine-dev/Little_projects" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://sandrine-dev.github.io/Little_projects/" target="_blank"><i class="fas fa-home"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/Site_gite.jpg" alt="Site des gîtes de Chaillac">
-              <h4>Les gîtes de Chaillac</h4>
-              <p>Création d'un site pour des gîtes se trouvant en Corrèze. L'interface a été créer en collaboration avec le gérant du site. J'ai utilisé du Javascript, CSS et HTML.</p>
-              <div class="liens">
-                <a href="https://www.gites.brunovolpi.com/" target="_blank"><i class="fas fa-home"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/Site_Groupomania.jpg" alt="Site du résaux social d'entreprise de Site_Groupomania">
-              <h4>Réseau social d’entreprise</h4>
-              <p>Ce site contient MySQL, Javascript, VueJs et sequelize. J'ai pu dévelloper la base de donnée, le back-end et le front-end.</p>
-              <div class="liens">
-                <a href="https://github.com/Sandrine-dev/OpenClassroomProject7" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" id="AllSite">
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/Site_Piquante.jpg" alt="Site de sauce piquante">
-              <h4>API sécurisée</h4>
-              <p>Avec l'aide de MongoDB j'ai créer une base de donnée en mettant en oeuvre des opérations CRUD de manière sécurisée.</p>
-              <div class="liens">
-                <a href="https://github.com/Sandrine-dev/OpenClassroomProject6" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/Site_Orinoco.JPG" alt="Site de vente d'Orinoco">
-              <h4>Site de  e-commerce</h4>
-              <p>J'ai utilisé Bootstrap pour le visuel et le javascript afin de communiquer avec la base de donnée. Chaque information est passé par le localStorage. </p>
-              <div class="liens">
-                <a href="https://github.com/Sandrine-dev/OpenClassroomProject5" target="_blank"><i class="fab fa-github"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/Site_LaChouetteAgence.jpg" alt="Site vitrine La chouette agnce">
-              <h4>Optimiser un site web existant</h4>
-              <p>Utilisation des règles de SEO afin de rendre le site plus performant et de corriger les erreurs de réglementation.</p>
-              <div class="liens">
-                <a href="https://github.com/Sandrine-dev/OpenClassroomProject4corrige" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://sandrine-dev.github.io/OpenclassroomProject4corrige/" target="_blank"><i class="fas fa-home"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" id="AllSite">
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/Site_OhMyFood.jpg" alt="Site de Oh my food">
-              <h4>Dynamiser une page web avec des animations CSS</h4>
-              <p>Graçe à une maquette j'ai dévellopé se site et mit en place différente animations avec du CSS.</p>
-              <div class="liens">
-                <a href="https://github.com/Sandrine-dev/OpenClassroomProject3" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://sandrine-dev.github.io/OpenclassroomProject3/" target="_blank"><i class="fas fa-home"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="content reveal">
-              <img src="./images/Site_Curriculum.jpg" alt="Curriculum">
-              <h4>Création du Curriculum-vitae</h4>
-              <p>Ce site a été codé en mobil first, j'ai utilisé le HTML et le CSS. </p>
-              <div class="liens">
-                <a href="https://github.com/Sandrine-dev/OpenClassroomProject2" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://sandrine-dev.github.io/OpenclassroomProject2/" target="_blank"><i class="fas fa-home"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Projects-->
-    <section id="Projects" >
-        <div id="ProjectsBck" class="reveal">
-          <div id="ProjectTitre">
-            <h2>Projets </br> Personnel</h2>
-          </div>
-          <div id="ProjectList">
-            <ul>
-              <li><span>Création d'un site pour un jeu</span><br>
-              Sur mon temps libre, je mets actuellement en place un site d'information de jeux, afin de permettre à ses joueurs de pouvoir trouver des astuces et codes utiles.</li>
-              <li><span>Une librairie Personnalisée</span><br>
-              Je me construit une site de librairie personnalisée afin de trouver et utiliser des fonctionalité plus rapidement.</li>
-            </ul>
-          </div>
-        </div>
-    </section>
-
-    <!--Library
-    <section id="Library">
-      EN CONSTRUCTION
-    </section>-->
-
-    <!--Footer // Contact-->    
-    <footer id="Contact">
-      <div id="AllContact">
-        <h2>Volpi Sandrine</h2>
-        <div id="InfoContact" >
-          <div id="SendContact" class="reveal">
-            <h4>Email:</h4>
-            <p><a href="mailto:sandrine.volpi@gmail.com">Sandrine.volpi@gmail.com</a></p>
-            <h4>Téléphone:</h4>
-            <p><a href="0689250796">06 89 25 07 96</a></p>
-          </div>
-          <div id="SiteContact" class="reveal">
-            <a href="https://www.linkedin.com/in/sandrine-volpi-6a5582143/"  target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Sandrine-dev"  target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
-        <div id="Copywright">
-            <p>	&copy; Sandrine Volpi
-            <br><span>Mise à jour:</span> 20/05/2022</p>
-        </div>
-      </div>
-    </footer>
-
-    <!--Javascript-->
-    <script src="javascript/main.js"></script>
-    
-  </body>
+        
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
