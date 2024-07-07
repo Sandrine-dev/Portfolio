@@ -500,7 +500,10 @@ img {
   width: 95%;
 }
 .skills__js {
-  width: 70%;
+  width: 75%;
+}
+.skills__react {
+  width: 10%;
 }
 .skills__vue {
   width: 60%;
