@@ -503,7 +503,7 @@ img {
   width: 75%;
 }
 .skills__react {
-  width: 10%;
+  width: 30%;
 }
 .skills__vue {
   width: 60%;
@@ -512,7 +512,7 @@ img {
   width: 10%;
 }
 .skills__sql {
-  width: 50%;
+  width: 65%;
 }
 .skills__node {
   width: 60%;
@@ -548,6 +548,10 @@ img {
 }
 .skills__we {
   width: 95%;
+}
+
+.skills__net {
+  width: 25%;
 }
 
 .skills__close .skills__list {
